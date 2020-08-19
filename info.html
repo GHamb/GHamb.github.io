@@ -12,6 +12,14 @@
         background-color: #333;
     }
 
+    div {
+        margin: 30px auto 0 auto;
+        border: solid;
+        width: 30%;
+        padding-bottom: 3vh;
+        background-color: rgb(80, 70, 70);
+    }
+
     p {
         text-align: center;
         font-size: 1.1em;
@@ -19,22 +27,54 @@
         color: white;
     }
 
+    p:hover {
+        color: grey;
+        transition: 0.6s;
+    }
+
     p img {
-        width: 200px;
+        width: 90px;
         border-radius: 60px;
+        border: solid 2px white;
+    }
+
+    #nome {
+        font-size: 1.5em;
+    }
+
+    #div1 {
+        width: 30vw;
+    }
+
+    #div1 p {
+        text-align: justify;
+        margin-left: 8px;
+        margin-top: 12px;
+
+    }
+
+    #grf {
+        width: 35px;
+        height: 35px;
+        border: none;
+        margin-left: 15px;
+        border-radius: 2px;
     }
 </style>
 
 <body>
-    <p id="nome"></p>
-    <p id="img_p"></p>
-    <p id="peseg"></p>
-    <p id="desc"></p>
-    <p id="colab"></p>
-    <p id="branches"></p>
-    <p id="listcommit"></p>
-    <p id="listlg"></p>
+    <div>
+        <p id="img_p"></p>
+        <p id="nome"></p>
+        <p id="peseg"></p>
+    </div>
 
+    <div id='div1'>
+        <p id="branches">Branches: </p>
+        <p id="listcommit">Commits: </p>
+        <p id="listlg">Linguagens:</p>
+        <p id="desc"></p>
+    </div>
     <script src="main2.js"></script>
 </body>
 
